@@ -1,10 +1,11 @@
 package ua.kpi.fpm.pma.oop.chuckquotes;
 
 import java.util.LinkedList;
+import java.util.List;
 
-public class HardCodedQuoteDAO implements QuoteDAO{
-    public LinkedList<String> getAllQuotes() {
-        LinkedList<String> quotes = new LinkedList<>();
+public class HardCodedQuoteDAO implements QuoteDAO {
+    public List<String> getAllQuotes() {
+        List<String> quotes = new LinkedList<>();
 
         quotes.add("Chuck Norris can make a class that is both abstract and final.");
         quotes.add("Chuck Norris serializes objects straight into human skulls.");
@@ -47,6 +48,7 @@ public class HardCodedQuoteDAO implements QuoteDAO{
         quotes.add("Chuck Norris workstation has so memory and it’s so powerful that he could run all java applications in the world and get 2% of resources usage.");
         quotes.add("Chuck Norris codes generics since 1.3.");
         quotes.add("Chuck Norris’ classes can’t be decompiled… don’t bother trying.");
+
         return quotes;
     }
 }
