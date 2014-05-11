@@ -1,6 +1,5 @@
 package ua.kpi.fpm.pma.oop.chuckquotes;
 
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -9,10 +8,12 @@ import static org.junit.Assert.assertEquals;
 public class QuotesRegistryTest {
 
     private static String[] expectedQuotes;
-    private QuotesRegistry registry;
+    private static QuotesRegistry registry;
 
     @BeforeClass
     public static void setUpClass() throws Exception {
+        registry = new QuotesRegistry();
+
         expectedQuotes = new String[41];
 
         expectedQuotes[0] = "Chuck Norris can make a class that is both abstract and final.";
@@ -56,11 +57,6 @@ public class QuotesRegistryTest {
         expectedQuotes[38] = "Chuck Norris workstation has so memory and it’s so powerful that he could run all java applications in the world and get 2% of resources usage.";
         expectedQuotes[39] = "Chuck Norris codes generics since 1.3.";
         expectedQuotes[40] = "Chuck Norris’ classes can’t be decompiled… don’t bother trying.";
-    }
-
-    @Before
-    public void setUp() throws Exception {
-        registry = new QuotesRegistry();
     }
 
     @Test
