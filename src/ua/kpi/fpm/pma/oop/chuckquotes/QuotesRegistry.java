@@ -1,11 +1,12 @@
 package ua.kpi.fpm.pma.oop.chuckquotes;
 
-import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
+import java.util.NoSuchElementException;
 
 public class QuotesRegistry {
 
-    private Iterator<String> iterator;
+    private ListIterator<String> iterator;
     private final QuoteDAO dao;
 
     public QuotesRegistry() {
@@ -18,8 +19,23 @@ public class QuotesRegistry {
 
     public String getNextQuote() {
         if (iterator == null) {
-            iterator = getAllQuotes().iterator();
+            iterator = getAllQuotes().listIterator();
         }
-        return iterator.next();
+        String nextQuote;
+        try {
+            nextQuote = iterator.next();
+        } catch (NoSuchElementException e) {
+            rewindToFirstElement();
+            nextQuote = iterator.next();
+        }
+        return nextQuote;
+    }
+
+    public int size() {
+        return getAllQuotes().size();
+    }
+
+    private void rewindToFirstElement() {
+        while (iterator.hasPrevious()) iterator.previous();
     }
 }

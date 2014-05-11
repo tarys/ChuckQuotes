@@ -64,11 +64,22 @@ public class QuotesRegistryTest {
     }
 
     @Test
+    public void testRegistrySize() throws Exception {
+        assertEquals(expectedQuotes.length, registry.size());
+    }
+
+    @Test
     public void testGetAllQuotes() throws Exception {
-        assertEquals(expectedQuotes.length, registry.getAllQuotes().size());
         for (int i = 0; i < expectedQuotes.length; i++) {
             assertEquals("Mismatch in quote #" + i, expectedQuotes[i], registry.getNextQuote());
         }
     }
 
+    @Test
+    public void testAfterLastQuoteFirstReturned() throws Exception {
+        for (String ignored : expectedQuotes) {
+            registry.getNextQuote();
+        }
+        assertEquals(expectedQuotes[0], registry.getNextQuote());
+    }
 }
