@@ -1,20 +1,20 @@
 package ua.kpi.fpm.pma.oop.chuckquotes;
 
 public class Quote {
-    private int id;
+    private int index;
     private String text;
 
-    public Quote(int id, String text) {
-        this.id = id;
+    public Quote(int index, String text) {
+        this.index = index;
         this.text = text;
     }
 
-    public int getId() {
-        return id;
+    public int getIndex() {
+        return index;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIndex(int index) {
+        this.index = index;
     }
 
     public String getText() {
@@ -37,7 +37,7 @@ public class Quote {
 
         Quote that = (Quote) o;
 
-        if (id != that.id) return false;
+        if (index != that.index) return false;
         if (!text.equals(that.text)) return false;
 
         return true;
@@ -45,7 +45,7 @@ public class Quote {
 
     @Override
     public int hashCode() {
-        int result = id;
+        int result = index;
         result = 31 * result + text.hashCode();
         return result;
     }
