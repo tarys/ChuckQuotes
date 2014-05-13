@@ -1,41 +1,36 @@
 package ua.kpi.fpm.pma.oop.chuckquotes;
 
+import ua.kpi.fpm.pma.oop.chuckquotes.dao.HardCodedQuoteDAO;
+import ua.kpi.fpm.pma.oop.chuckquotes.dao.QuoteDAO;
+
 import java.util.List;
-import java.util.ListIterator;
-import java.util.NoSuchElementException;
 
 public class QuotesRegistry {
 
-    private ListIterator<String> iterator;
+    private int currentQuoteIndex;
     private final QuoteDAO dao;
 
     public QuotesRegistry() {
         dao = new HardCodedQuoteDAO();
     }
 
-    public List<String> getAllQuotes() {
+    public List<Quote> getAllQuotes() {
         return dao.getAllQuotes();
     }
 
-    public String getNextQuote() {
-        if (iterator == null) {
-            iterator = getAllQuotes().listIterator();
+    public Quote getNextQuote() {
+        if(currentQuoteIndex >= size()){
+            currentQuoteIndex = 0;
         }
-        String nextQuote;
-        try {
-            nextQuote = iterator.next();
-        } catch (NoSuchElementException e) {
-            rewindToFirstElement();
-            nextQuote = iterator.next();
-        }
-        return nextQuote;
+
+        return getQuote(currentQuoteIndex++);
     }
 
     public int size() {
         return getAllQuotes().size();
     }
 
-    private void rewindToFirstElement() {
-        while (iterator.hasPrevious()) iterator.previous();
+    public Quote getQuote(int index) {
+        return dao.getQuote(index);
     }
 }

@@ -67,7 +67,7 @@ public class QuotesRegistryTest {
     @Test
     public void testGetAllQuotes() throws Exception {
         for (int i = 0; i < expectedQuotes.length; i++) {
-            assertEquals("Mismatch in quote #" + i, expectedQuotes[i], registry.getNextQuote());
+            assertEquals("Mismatch in quote #" + i, expectedQuotes[i], registry.getNextQuote().toString());
         }
     }
 
@@ -76,6 +76,13 @@ public class QuotesRegistryTest {
         for (String ignored : expectedQuotes) {
             registry.getNextQuote();
         }
-        assertEquals(expectedQuotes[0], registry.getNextQuote());
+        assertEquals(expectedQuotes[0], registry.getNextQuote().toString());
+    }
+
+    @Test
+    public void testGetQuote() throws Exception {
+        for (int i = 0; i < expectedQuotes.length; i++) {
+            assertEquals(expectedQuotes[i], registry.getQuote(i).toString());
+        }
     }
 }
