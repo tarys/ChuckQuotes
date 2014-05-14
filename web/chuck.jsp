@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Chuck Quotes: Chuck Page</h1>
-<img src="img/chuck.jpg" height="50%">
+
 <jsp:useBean id="quotesRegistry" class="ua.kpi.fpm.pma.oop.chuckquotes.QuotesRegistry" scope="application"/>
 
 <table border="1">
@@ -14,14 +14,27 @@
         <tr>
             <td>${quote.text}</td>
             <td>
-                <a href="chuck_servlet?command=edit&quote_index=${quote.index}">Edit</a>
+                <c:url var="edit_url" value="/chuck_servlet">
+                    <c:param name="command" value="edit"/>
+                    <c:param name="quote_index" value="${quote.index}"/>
+                </c:url>
+                <button onclick="location.href='${edit_url}'">Edit</button>
             </td>
             <td>
-                <a href="chuck_servlet?command=remove&quote_index=${quote.index}">Remove</a>
+                <c:url var="remove_url" value="/chuck_servlet">
+                    <c:param name="command" value="remove"/>
+                    <c:param name="quote_index" value="${quote.index}"/>
+                </c:url>
+                <button onclick="location.href='${remove_url}'">Remove</button>
             </td>
         </tr>
     </c:forEach>
 </table>
+<br/>
+<c:url var="add_url" value="/chuck_servlet">
+    <c:param name="command" value="add"/>
+</c:url>
+<button onclick="location.href='${add_url}'">Add Quote</button>
 
 </body>
 </html>
