@@ -6,9 +6,14 @@
 </head>
 <body>
 <h1>Chuck Quotes: Chuck Page</h1>
-
+<div style="text-align:right">
+    <c:url var="logout_url" value="/chuck_servlet">
+        <c:param name="command" value="logout"/>
+    </c:url>
+    <button onclick="location.href='${logout_url}'">Log out</button>
+</div>
+<hr/>
 <jsp:useBean id="quotesRegistry" class="ua.kpi.fpm.pma.oop.chuckquotes.QuotesRegistry" scope="application"/>
-
 <table border="1">
     <c:forEach var="quote" items="${applicationScope.quotesRegistry.all}">
         <tr>

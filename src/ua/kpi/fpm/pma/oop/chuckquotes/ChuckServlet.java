@@ -18,9 +18,22 @@ public class ChuckServlet extends HttpServlet {
     }
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        final QuotesRegistry quotesRegistry = (QuotesRegistry) getServletContext().getAttribute("quotesRegistry");
+        QuotesRegistry quotesRegistry = (QuotesRegistry) getServletContext().getAttribute("quotesRegistry");
+        if (quotesRegistry == null) {
+            quotesRegistry = new QuotesRegistry();
+            getServletContext().setAttribute("quotesRegistry", quotesRegistry);
+        }
         final String command = request.getParameter("command");
+        if (command == null) {
+            getServletContext().getRequestDispatcher("/error.jsp").forward(request, response);
+        }
         switch (command) {
+            case "login":
+            case "next_quote": {
+                request.setAttribute("quote", quotesRegistry.getNextQuote());
+                getServletContext().getRequestDispatcher("/quote.jsp").forward(request, response);
+                break;
+            }
             case "add":
                 getServletContext().getRequestDispatcher("/add_quote.jsp").forward(request, response);
                 break;
@@ -50,8 +63,12 @@ public class ChuckServlet extends HttpServlet {
             case "cancel_edit":
                 getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
                 break;
+            case "logout":
+                request.getSession().invalidate();
+                getServletContext().getRequestDispatcher("/login.jsp").forward(request, response);
+                break;
             default:
-                getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
+                getServletContext().getRequestDispatcher("/error.jsp").forward(request, response);
                 break;
         }
     }

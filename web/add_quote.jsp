@@ -6,6 +6,13 @@
 </head>
 <body>
 <h1>Chuck Quotes: Add Quote</h1>
+<div style="text-align:right">
+    <c:url var="logout_url" value="/chuck_servlet">
+        <c:param name="command" value="logout"/>
+    </c:url>
+    <button onclick="location.href='${logout_url}'">Log out</button>
+</div>
+<hr/>
 <form id="add_quote" action="chuck_servlet" method="post">
     <textarea name="quote_text" form="add_quote"></textarea>
     <br/>

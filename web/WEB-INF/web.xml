@@ -26,6 +26,7 @@
         <url-pattern>/edit_quote.jsp</url-pattern>
         <url-pattern>/error.jsp</url-pattern>
         <url-pattern>/user.jsp</url-pattern>
+        <servlet-name>ChuckServlet</servlet-name>
     </filter-mapping>
 
 
