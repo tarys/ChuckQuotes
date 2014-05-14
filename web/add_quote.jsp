@@ -7,7 +7,7 @@
 <body>
 <h1>Chuck Quotes: Add Quote</h1>
 <form id="add_quote" action="chuck_servlet" method="post">
-    <textarea name="quote_text" form="add_quote">""</textarea>
+    <textarea name="quote_text" form="add_quote"></textarea>
     <br/>
     <input type="submit" value="Confirm">
 

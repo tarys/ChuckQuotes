@@ -1,17 +1,17 @@
 package ua.kpi.fpm.pma.oop.chuckquotes;
 
-import ua.kpi.fpm.pma.oop.chuckquotes.dao.HardCodedQuoteDAO;
-import ua.kpi.fpm.pma.oop.chuckquotes.dao.QuoteDAO;
+import ua.kpi.fpm.pma.oop.chuckquotes.dao.HardCodedQuoteDao;
+import ua.kpi.fpm.pma.oop.chuckquotes.dao.QuoteDao;
 
 import java.util.List;
 
 public class QuotesRegistry {
 
     private int currentQuoteIndex;
-    private final QuoteDAO dao;
+    private final QuoteDao dao;
 
     public QuotesRegistry() {
-        dao = new HardCodedQuoteDAO();
+        dao = new HardCodedQuoteDao();
     }
 
     public List<Quote> getAll() {

@@ -4,11 +4,11 @@ import ua.kpi.fpm.pma.oop.chuckquotes.Quote;
 
 import java.util.*;
 
-public class HardCodedQuoteDAO implements QuoteDAO {
+public class HardCodedQuoteDao implements QuoteDao {
 
     private final Map<Integer, Quote> quotesMap;
 
-    public HardCodedQuoteDAO() {
+    public HardCodedQuoteDao() {
         int index = 0;
         quotesMap = new TreeMap<>(); // order of elements matters
 

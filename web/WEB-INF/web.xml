@@ -3,6 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
     <servlet>
         <servlet-name>ChuckServlet</servlet-name>
         <servlet-class>ua.kpi.fpm.pma.oop.chuckquotes.ChuckServlet</servlet-class>
@@ -13,7 +14,23 @@
         <url-pattern>/chuck_servlet</url-pattern>
     </servlet-mapping>
 
+    <filter>
+        <filter-name>AuthenticationFilter</filter-name>
+        <filter-class>ua.kpi.fpm.pma.oop.chuckquotes.AuthenticationFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/add_quote.jsp</url-pattern>
+        <url-pattern>/chuck.jsp</url-pattern>
+        <url-pattern>/edit_quote.jsp</url-pattern>
+        <url-pattern>/error.jsp</url-pattern>
+        <url-pattern>/user.jsp</url-pattern>
+    </filter-mapping>
+
+
     <welcome-file-list>
         <welcome-file>login.jsp</welcome-file>
     </welcome-file-list>
+
 </web-app>

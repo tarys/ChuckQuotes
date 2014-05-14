@@ -4,7 +4,7 @@ import ua.kpi.fpm.pma.oop.chuckquotes.Quote;
 
 import java.util.List;
 
-public interface QuoteDAO {
+public interface QuoteDao {
     List<Quote> getAllQuotes();
 
     Quote getQuote(int index);
