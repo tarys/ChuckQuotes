@@ -69,7 +69,7 @@ public class QuotesRegistryTest {
     @Test
     public void testGetAllQuotes() throws Exception {
         for (int i = 0; i < expectedQuotes.length; i++) {
-            assertEquals("Mismatch in quote #" + i, expectedQuotes[i], registry.getNextQuote().toString());
+            assertEquals("Mismatch in quote #" + i, expectedQuotes[i], registry.getNextQuote().getText());
         }
     }
 
@@ -78,13 +78,13 @@ public class QuotesRegistryTest {
         for (String ignored : expectedQuotes) {
             registry.getNextQuote();
         }
-        assertEquals(expectedQuotes[0], registry.getNextQuote().toString());
+        assertEquals(expectedQuotes[0], registry.getNextQuote().getText());
     }
 
     @Test
     public void testGetQuote() throws Exception {
         for (int i = 0; i < expectedQuotes.length; i++) {
-            assertEquals(expectedQuotes[i], registry.get(i).toString());
+            assertEquals(expectedQuotes[i], registry.get(i).getText());
         }
     }
 
@@ -94,5 +94,14 @@ public class QuotesRegistryTest {
         assertTrue(registry.getAll().contains(toBeRemoved));
         registry.remove(toBeRemoved.getIndex());
         assertFalse(registry.getAll().contains(toBeRemoved));
+    }
+
+    @Test
+    public void testAdd() throws Exception {
+        assertEquals(expectedQuotes.length, registry.size());
+        registry.add("This is new very funny joke about Chuck");
+        assertEquals(expectedQuotes.length + 1, registry.size());
+        assertEquals("This is new very funny joke about Chuck", registry.get(registry.size() - 1).getText());
+        registry.remove(registry.size() - 1);
     }
 }

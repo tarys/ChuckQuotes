@@ -38,4 +38,7 @@ public class QuotesRegistry {
         dao.removeQuote(index);
     }
 
+    public void add(String quoteText) {
+        dao.addQuote(quoteText);
+    }
 }

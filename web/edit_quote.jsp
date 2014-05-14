@@ -6,8 +6,7 @@
 </head>
 <body>
 <h1>Chuck Quotes: Edit Quote</h1>
-
-<form action="chuck_servlet" id="edit_quote">
+<form id="edit_quote" action="chuck_servlet" method="post">
     <textarea name="quote_text" form="edit_quote">${requestScope.quoteToEdit.text}</textarea>
     <br/>
     <input type="submit" value="Confirm">

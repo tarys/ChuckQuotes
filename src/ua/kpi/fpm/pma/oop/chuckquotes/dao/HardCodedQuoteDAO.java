@@ -68,4 +68,17 @@ public class HardCodedQuoteDAO implements QuoteDAO {
     public void removeQuote(int index) {
         quotesMap.remove(index);
     }
+
+    @Override
+    public void addQuote(String quoteText) {
+        int maxIndex = 0;
+        for (Integer currentIndex : quotesMap.keySet()) {
+            if (currentIndex > maxIndex) {
+                maxIndex = currentIndex;
+            }
+        }
+
+        final int newIndex = maxIndex + 1;
+        quotesMap.put(newIndex, new Quote(newIndex, quoteText));
+    }
 }

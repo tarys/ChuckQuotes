@@ -10,4 +10,6 @@ public interface QuoteDAO {
     Quote getQuote(int index);
 
     void removeQuote(int index);
+
+    void addQuote(String quoteText);
 }
