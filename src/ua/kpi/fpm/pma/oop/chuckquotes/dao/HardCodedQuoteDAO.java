@@ -63,4 +63,9 @@ public class HardCodedQuoteDAO implements QuoteDAO {
     public Quote getQuote(int index) {
         return quotesMap.get(index);
     }
+
+    @Override
+    public void removeQuote(int index) {
+        quotesMap.remove(index);
+    }
 }

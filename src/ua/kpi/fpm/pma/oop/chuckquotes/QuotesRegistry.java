@@ -14,7 +14,7 @@ public class QuotesRegistry {
         dao = new HardCodedQuoteDAO();
     }
 
-    public List<Quote> getAllQuotes() {
+    public List<Quote> getAll() {
         return dao.getAllQuotes();
     }
 
@@ -23,14 +23,19 @@ public class QuotesRegistry {
             currentQuoteIndex = 0;
         }
 
-        return getQuote(currentQuoteIndex++);
+        return get(currentQuoteIndex++);
     }
 
     public int size() {
-        return getAllQuotes().size();
+        return getAll().size();
     }
 
-    public Quote getQuote(int index) {
+    public Quote get(int index) {
         return dao.getQuote(index);
     }
+
+    public void remove(int index) {
+        dao.removeQuote(index);
+    }
+
 }

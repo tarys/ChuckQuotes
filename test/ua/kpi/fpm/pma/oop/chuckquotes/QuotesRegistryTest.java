@@ -4,6 +4,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class QuotesRegistryTest {
 
@@ -82,7 +84,15 @@ public class QuotesRegistryTest {
     @Test
     public void testGetQuote() throws Exception {
         for (int i = 0; i < expectedQuotes.length; i++) {
-            assertEquals(expectedQuotes[i], registry.getQuote(i).toString());
+            assertEquals(expectedQuotes[i], registry.get(i).toString());
         }
+    }
+
+    @Test
+    public void testRemove() throws Exception {
+        final Quote toBeRemoved = registry.get(5);
+        assertTrue(registry.getAll().contains(toBeRemoved));
+        registry.remove(toBeRemoved.getIndex());
+        assertFalse(registry.getAll().contains(toBeRemoved));
     }
 }

@@ -8,4 +8,6 @@ public interface QuoteDAO {
     List<Quote> getAllQuotes();
 
     Quote getQuote(int index);
+
+    void removeQuote(int index);
 }
