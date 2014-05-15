@@ -14,9 +14,19 @@
         <url-pattern>/chuck_servlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>ua.kpi.fpm.pma.oop.chuckquotes.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login_servlet</url-pattern>
+    </servlet-mapping>
+
     <filter>
         <filter-name>AuthenticationFilter</filter-name>
-        <filter-class>ua.kpi.fpm.pma.oop.chuckquotes.AuthenticationFilter</filter-class>
+        <filter-class>ua.kpi.fpm.pma.oop.chuckquotes.ChuckWatchDogFilter</filter-class>
     </filter>
 
     <filter-mapping>
@@ -25,7 +35,7 @@
         <url-pattern>/chuck.jsp</url-pattern>
         <url-pattern>/edit_quote.jsp</url-pattern>
         <url-pattern>/error.jsp</url-pattern>
-        <url-pattern>/user.jsp</url-pattern>
+        <url-pattern>/quote.jsp</url-pattern>
         <servlet-name>ChuckServlet</servlet-name>
     </filter-mapping>
 

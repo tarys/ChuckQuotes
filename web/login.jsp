@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>Chuck Quotes: Login</h1>
-<form method="post" action="chuck_servlet">
+<form method="post" action="login_servlet">
     <table>
         <tr>
             <td>User Name :</td>

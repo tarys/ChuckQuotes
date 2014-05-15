@@ -1,4 +1,4 @@
-package ua.kpi.fpm.pma.oop.chuckquotes;
+package ua.kpi.fpm.pma.oop.chuckquotes.quote;
 
 public class Quote {
     private int index;

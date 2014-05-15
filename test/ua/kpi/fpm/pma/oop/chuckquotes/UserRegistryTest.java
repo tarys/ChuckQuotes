@@ -2,7 +2,8 @@ package ua.kpi.fpm.pma.oop.chuckquotes;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ua.kpi.fpm.pma.oop.chuckquotes.dao.UserNotExistException;
+import ua.kpi.fpm.pma.oop.chuckquotes.exceptions.UserNotExistException;
+import ua.kpi.fpm.pma.oop.chuckquotes.user.UserRegistry;
 
 public class UserRegistryTest {
     @Test

@@ -7,7 +7,7 @@
 <body>
 <h1>Chuck Quotes: Add Quote</h1>
 <div style="text-align:right">
-    <c:url var="logout_url" value="/chuck_servlet">
+    <c:url var="logout_url" value="/login_servlet">
         <c:param name="command" value="logout"/>
     </c:url>
     <button onclick="location.href='${logout_url}'">Log out</button>

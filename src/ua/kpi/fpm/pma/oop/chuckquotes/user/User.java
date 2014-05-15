@@ -1,4 +1,4 @@
-package ua.kpi.fpm.pma.oop.chuckquotes;
+package ua.kpi.fpm.pma.oop.chuckquotes.user;
 
 public class User {
     private String name;

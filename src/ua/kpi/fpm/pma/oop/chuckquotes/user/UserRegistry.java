@@ -1,8 +1,8 @@
-package ua.kpi.fpm.pma.oop.chuckquotes;
+package ua.kpi.fpm.pma.oop.chuckquotes.user;
 
-import ua.kpi.fpm.pma.oop.chuckquotes.dao.HardCodedUserDao;
-import ua.kpi.fpm.pma.oop.chuckquotes.dao.UserDao;
-import ua.kpi.fpm.pma.oop.chuckquotes.dao.UserNotExistException;
+import ua.kpi.fpm.pma.oop.chuckquotes.exceptions.UserNotExistException;
+import ua.kpi.fpm.pma.oop.chuckquotes.user.dao.HardCodedUserDao;
+import ua.kpi.fpm.pma.oop.chuckquotes.user.dao.UserDao;
 
 public class UserRegistry {
     private UserDao dao;

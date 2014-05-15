@@ -1,7 +1,7 @@
-package ua.kpi.fpm.pma.oop.chuckquotes;
+package ua.kpi.fpm.pma.oop.chuckquotes.quote;
 
-import ua.kpi.fpm.pma.oop.chuckquotes.dao.HardCodedQuoteDao;
-import ua.kpi.fpm.pma.oop.chuckquotes.dao.QuoteDao;
+import ua.kpi.fpm.pma.oop.chuckquotes.quote.dao.HardCodedQuoteDao;
+import ua.kpi.fpm.pma.oop.chuckquotes.quote.dao.QuoteDao;
 
 import java.util.List;
 

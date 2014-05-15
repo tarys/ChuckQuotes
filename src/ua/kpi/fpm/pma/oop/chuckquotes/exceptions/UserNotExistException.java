@@ -1,4 +1,4 @@
-package ua.kpi.fpm.pma.oop.chuckquotes.dao;
+package ua.kpi.fpm.pma.oop.chuckquotes.exceptions;
 
 public class UserNotExistException extends Exception {
     public UserNotExistException(String login) {

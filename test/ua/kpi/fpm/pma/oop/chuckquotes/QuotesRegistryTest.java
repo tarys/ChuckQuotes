@@ -2,6 +2,8 @@ package ua.kpi.fpm.pma.oop.chuckquotes;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
+import ua.kpi.fpm.pma.oop.chuckquotes.quote.Quote;
+import ua.kpi.fpm.pma.oop.chuckquotes.quote.QuotesRegistry;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
