@@ -1,6 +1,7 @@
 package ua.jug.chuckquotes;
 
 import ua.jug.chuckquotes.exceptions.UserNotExistException;
+import ua.jug.chuckquotes.jmx.LoginWatchDog;
 import ua.jug.chuckquotes.quote.QuotesRegistry;
 import ua.jug.chuckquotes.user.UserRegistry;
 
@@ -51,6 +52,8 @@ public class LoginServlet extends HttpServlet {
                             session.setAttribute("user", userRegistry.getUser(username));
                             request.setAttribute("quote", quotesRegistry.getNextQuote());
                             if (username.equals("Chuck")) {
+                                final LoginWatchDog loginWatchDog = (LoginWatchDog) getServletContext().getAttribute("LoginWatchDog");
+                                loginWatchDog.chuckLoggedIn();
                                 getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
                             } else {
                                 getServletContext().getRequestDispatcher("/quote.jsp").forward(request, response);

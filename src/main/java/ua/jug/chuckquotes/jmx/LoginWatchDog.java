@@ -6,6 +6,9 @@ import javax.management.ObjectName;
 import java.util.ArrayList;
 
 public class LoginWatchDog implements LoginWatchDogMBean {
+
+    private int loginCount;
+
     public LoginWatchDog() {
         final MBeanServer mBeanServer = getServer();
         try {
@@ -14,6 +17,7 @@ public class LoginWatchDog implements LoginWatchDogMBean {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        this.loginCount = 0;
     }
 
 
@@ -37,6 +41,10 @@ public class LoginWatchDog implements LoginWatchDogMBean {
 
     @Override
     public int getChuckLoginCount() {
-        return 0;
+        return loginCount;
+    }
+
+    public void chuckLoggedIn() {
+        this.loginCount++;
     }
 }

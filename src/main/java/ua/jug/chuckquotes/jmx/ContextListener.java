@@ -7,6 +7,7 @@ public class ContextListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         LoginWatchDog watchDog = new LoginWatchDog();
+        servletContextEvent.getServletContext().setAttribute("LoginWatchDog", watchDog);
     }
 
     @Override
