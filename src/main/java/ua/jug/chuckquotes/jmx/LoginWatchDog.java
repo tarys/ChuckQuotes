@@ -44,6 +44,11 @@ public class LoginWatchDog implements LoginWatchDogMBean {
         return loginCount;
     }
 
+    @Override
+    public void resetLoginCount() {
+        this.loginCount = 0;
+    }
+
     public void chuckLoggedIn() {
         this.loginCount++;
     }
