@@ -18,6 +18,7 @@ public class LoginServlet extends HttpServlet {
     public void init() throws ServletException {
         super.init();
         this.userRegistry = new UserRegistry();
+
     }
 
     @Override

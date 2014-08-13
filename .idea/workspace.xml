@@ -1,44 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="549a28ea-dc81-4a68-8607-4f927a3fd233" name="Default" comment="finished base functionality without persistence">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chuck-quotes.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="DELETED" beforePath="D:\projects\ChuckQuotes\.idea\libraries\javax_servlet_jsp_jstl_api_1_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\ChuckQuotes\.idea\libraries\servlet_api.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\ChuckQuotes\.idea\libraries\standard_1_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\ChuckQuotes\ChuckQuotes.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ChuckQuotes.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ChuckQuotes.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="549a28ea-dc81-4a68-8607-4f927a3fd233" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/ContextListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/LoginWatchDog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/LoginWatchDogMBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\ChuckServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckServlet.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\ChuckWatchdogFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckWatchDogFilter.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\exceptions\UserNotExistException.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/exceptions/UserNotExistException.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\quote\Quote.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/Quote.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\quote\QuotesRegistry.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/QuotesRegistry.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\quote\dao\HardCodedQuoteDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/HardCodedQuoteDao.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\quote\dao\QuoteDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/QuoteDao.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\user\User.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/User.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\user\UserRegistry.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/UserRegistry.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\user\dao\HardCodedUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/dao/HardCodedUserDao.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\src\ua\kpi\fpm\pma\oop\chuckquotes\user\dao\UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/dao/UserDao.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\test\ua\kpi\fpm\pma\oop\chuckquotes\QuotesRegistryTest.java" afterPath="$PROJECT_DIR$/src/test/java/ua/jug/chuckquotes/QuotesRegistryTest.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\test\ua\kpi\fpm\pma\oop\chuckquotes\UserRegistryTest.java" afterPath="$PROJECT_DIR$/src/test/java/ua/jug/chuckquotes/UserRegistryTest.java" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\WEB-INF\lib\javax.servlet.jsp.jstl-api-1.2.1.jar" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/javax.servlet.jsp.jstl-api-1.2.1.jar" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\WEB-INF\lib\standard-1.1.2.jar" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/standard-1.1.2.jar" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\WEB-INF\web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\add_quote.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/add_quote.jsp" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\chuck.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/chuck.jsp" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\edit_quote.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/edit_quote.jsp" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\error.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\img\chuck.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/img/chuck.jpg" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\img\error.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/img/error.jpg" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-      <change type="MOVED" beforePath="D:\projects\ChuckQuotes\web\quote.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/quote.jsp" />
     </list>
     <ignored path="ChuckQuotes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,8 +61,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -104,18 +73,28 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="1600">
+            <state vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="1600">
               <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuotesRegistryTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/jug/chuckquotes/QuotesRegistryTest.java">
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29274005" vertical-offset="0" max-vertical-offset="2825">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginWatchDog.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/LoginWatchDog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.13494809" vertical-offset="283" max-vertical-offset="1150">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,12 +102,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HardCodedQuoteDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/HardCodedQuoteDao.java">
+      <file leaf-file-name="ContextListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/ContextListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2050">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,6 +168,11 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/jug/QuotesRegistryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ua/kpi/fpm/pma/oop/chuckquotes/QuotesRegistryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ua/jug/chuckquotes/QuotesRegistryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/LoginWatchDogMBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/ContextListener.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/LoginWatchDog.java" />
       </list>
     </option>
   </component>
@@ -274,7 +260,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -289,6 +275,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -391,6 +379,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chuck-quotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChuckQuotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chuck-quotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChuckQuotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -399,10 +443,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chuck-quotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChuckQuotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chuckquotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jmx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,6 +494,10 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="LayoutCode.rearrangeEntriesXML" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -431,14 +507,9 @@
       <recent name="ua.kpi.fpm.pma.oop.chuckquotes.dao" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ua.jug.chuckquotes.jmx" />
       <recent name="ua.kpi.fpm.pma.oop.chuckquotes.dao" />
       <recent name="ua.kpi.fpm.pma.oop.chuckquotes" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="ua.jug.chuckquotes" />
-      <recent name="ua.jug" />
-      <recent name="ua.kpi.fpm.pma.oop.chuckquotes" />
-      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\ChuckQuotes\src" />
@@ -446,6 +517,12 @@
       <recent name="D:\projects\ChuckQuotes\test\java" />
       <recent name="D:\projects\ChuckQuotes\src\main\java" />
       <recent name="D:\projects\ChuckQuotes\web" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ua.jug.chuckquotes" />
+      <recent name="ua.jug" />
+      <recent name="ua.kpi.fpm.pma.oop.chuckquotes" />
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.chuck-quotes local">
@@ -878,10 +955,10 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.ChuckQuotes" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.QuotesRegistryTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserRegistryTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in chuck-quotes" />
-      <item index="4" class="java.lang.String" itemvalue="Maven.chuck-quotes local" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.chuck-quotes local" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.QuotesRegistryTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserRegistryTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in chuck-quotes" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -927,7 +1004,8 @@
       <workItem from="1401038307971" duration="249000" />
       <workItem from="1407903599388" duration="399000" />
       <workItem from="1407904146324" duration="51000" />
-      <workItem from="1407904199047" duration="630000" />
+      <workItem from="1407904199047" duration="757000" />
+      <workItem from="1407905311827" duration="1919000" />
     </task>
     <task id="LOCAL-00001" summary="added positive test for QuotesRegistry content">
       <created>1399210550406</created>
@@ -981,15 +1059,19 @@
       <created>1400195409620</created>
       <updated>1400195409620</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="reorganized as Maven project; added Jolokia support">
+      <created>1407904856979</created>
+      <updated>1407904856980</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45376000" />
+    <option name="totallyTimeSpent" value="47422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6533333" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1003,14 +1085,13 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49444443" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23796791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23796791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6155556" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
@@ -1018,6 +1099,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8044218" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1048,7 +1130,8 @@
     <MESSAGE value="implemented login logic" />
     <MESSAGE value="somehow works" />
     <MESSAGE value="finished base functionality without persistence" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished base functionality without persistence" />
+    <MESSAGE value="reorganized as Maven project; added Jolokia support" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorganized as Maven project; added Jolokia support" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,21 +1151,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/chuck.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="700">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/jug/chuckquotes/QuotesRegistryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="2175">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="675">
@@ -1338,15 +1406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="875">
           <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="1975">
-          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1362,7 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,7 +1428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6733021" vertical-offset="0" max-vertical-offset="854">
           <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1390,19 +1447,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8269896" vertical-offset="183" max-vertical-offset="1600">
-          <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14637002" vertical-offset="0" max-vertical-offset="2050">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1414,18 +1462,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/jug/chuckquotes/QuotesRegistryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="2825">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1775">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/LoginWatchDogMBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.057670128" vertical-offset="0" max-vertical-offset="867">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/ContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="1600">
+        <state vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="1600">
           <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/jug/chuckquotes/QuotesRegistryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29274005" vertical-offset="0" max-vertical-offset="2825">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/jmx/LoginWatchDog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13494809" vertical-offset="283" max-vertical-offset="1150">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
