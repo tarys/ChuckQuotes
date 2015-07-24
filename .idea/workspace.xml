@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="549a28ea-dc81-4a68-8607-4f927a3fd233" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/MySQLQuoteDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/exceptions/QuoteException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/insert_general_quotes.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/HardCodedQuoteDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/HardCodedQuoteDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/QuoteDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/QuoteDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/QuotesRegistry.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/QuotesRegistry.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ChuckQuotes.iws" />
@@ -1220,7 +1212,7 @@
       <workItem from="1436092337157" duration="24000" />
       <workItem from="1437232884673" duration="1897000" />
       <workItem from="1437496007682" duration="2174000" />
-      <workItem from="1437771505764" duration="6244000" />
+      <workItem from="1437771505764" duration="6311000" />
     </task>
     <task id="LOCAL-00001" summary="added positive test for QuotesRegistry content">
       <created>1399210550406</created>
@@ -1348,11 +1340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1437774078864</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added MySQL-based DAO for quotes">
+      <created>1437777798494</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1437777798494</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added quotes with general jokes">
+      <created>1437777829662</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1437777829662</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86720000" />
+    <option name="totallyTimeSpent" value="86787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -1454,7 +1458,9 @@
     <MESSAGE value="added Twitter Bootstrap CSS styling" />
     <MESSAGE value="added database creation/population scripts" />
     <MESSAGE value="IDE-specific files" />
-    <option name="LAST_COMMIT_MESSAGE" value="IDE-specific files" />
+    <MESSAGE value="Added MySQL-based DAO for quotes" />
+    <MESSAGE value="Added quotes with general jokes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added quotes with general jokes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
