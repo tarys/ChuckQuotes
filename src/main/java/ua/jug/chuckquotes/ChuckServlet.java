@@ -1,5 +1,6 @@
 package ua.jug.chuckquotes;
 
+import ua.jug.chuckquotes.exceptions.QuoteException;
 import ua.jug.chuckquotes.quote.Quote;
 import ua.jug.chuckquotes.quote.QuotesRegistry;
 
@@ -30,50 +31,55 @@ public class ChuckServlet extends HttpServlet {
         if (command == null) {
             getServletContext().getRequestDispatcher("/error.jsp").forward(request, response);
         } else {
-            switch (command) {
-                case "next_quote": {
-                    request.setAttribute("quote", quotesRegistry.getNextQuote());
-                    getServletContext().getRequestDispatcher("/quote.jsp").forward(request, response);
-                    break;
+            try {
+                switch (command) {
+                    case "next_quote": {
+                        request.setAttribute("quote", quotesRegistry.getNextQuote());
+                        getServletContext().getRequestDispatcher("/quote.jsp").forward(request, response);
+                        break;
+                    }
+                    case "add": {
+                        getServletContext().getRequestDispatcher("/add_quote.jsp").forward(request, response);
+                        break;
+                    }
+                    case "confirm_add": {
+                        quotesRegistry.add(request.getParameter("quote_text"));
+                        getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
+                        break;
+                    }
+                    case "cancel_add": {
+                        getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
+                        break;
+                    }
+                    case "remove": {
+                        quotesRegistry.remove(Integer.parseInt(request.getParameter("quote_index")));
+                        getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
+                        break;
+                    }
+                    case "edit": {
+                        final Quote quoteToEdit = quotesRegistry.get(Integer.parseInt(request.getParameter("quote_index")));
+                        request.setAttribute("quoteToEdit", quoteToEdit);
+                        getServletContext().getRequestDispatcher("/edit_quote.jsp").forward(request, response);
+                        break;
+                    }
+                    case "confirm_edit": {
+                        final Quote quoteToEdit = quotesRegistry.get(Integer.parseInt(request.getParameter("quote_index")));
+                        quoteToEdit.setText(request.getParameter("quote_text"));
+                        getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
+                        break;
+                    }
+                    case "cancel_edit": {
+                        getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
+                        break;
+                    }
+                    default: {
+                        getServletContext().getRequestDispatcher("/error.jsp").forward(request, response);
+                        break;
+                    }
                 }
-                case "add": {
-                    getServletContext().getRequestDispatcher("/add_quote.jsp").forward(request, response);
-                    break;
-                }
-                case "confirm_add": {
-                    quotesRegistry.add(request.getParameter("quote_text"));
-                    getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
-                    break;
-                }
-                case "cancel_add": {
-                    getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
-                    break;
-                }
-                case "remove": {
-                    quotesRegistry.remove(Integer.parseInt(request.getParameter("quote_index")));
-                    getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
-                    break;
-                }
-                case "edit": {
-                    final Quote quoteToEdit = quotesRegistry.get(Integer.parseInt(request.getParameter("quote_index")));
-                    request.setAttribute("quoteToEdit", quoteToEdit);
-                    getServletContext().getRequestDispatcher("/edit_quote.jsp").forward(request, response);
-                    break;
-                }
-                case "confirm_edit": {
-                    final Quote quoteToEdit = quotesRegistry.get(Integer.parseInt(request.getParameter("quote_index")));
-                    quoteToEdit.setText(request.getParameter("quote_text"));
-                    getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
-                    break;
-                }
-                case "cancel_edit": {
-                    getServletContext().getRequestDispatcher("/chuck.jsp").forward(request, response);
-                    break;
-                }
-                default: {
-                    getServletContext().getRequestDispatcher("/error.jsp").forward(request, response);
-                    break;
-                }
+            } catch (QuoteException e) {
+                e.printStackTrace();
+                getServletContext().getRequestDispatcher("/error.jsp").forward(request, response);
             }
         }
     }

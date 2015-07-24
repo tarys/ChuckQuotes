@@ -5,10 +5,11 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/MySQLQuoteDao.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/exceptions/QuoteException.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/insert_general_quotes.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/HardCodedQuoteDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/HardCodedQuoteDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/QuoteDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/QuoteDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/QuotesRegistry.java" afterPath="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/QuotesRegistry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chuck-quotes.iml" afterPath="$PROJECT_DIR$/chuck-quotes.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ChuckQuotes.iws" />
@@ -119,58 +120,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/dao/MySQLUserDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
                 <marker date="1437771890424" expanded="true" signature="809:850" placeholder="SELECT * FRO..users..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySQLQuoteDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/MySQLQuoteDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1420#1421#0" expanded="true" />
-                <element signature="e#1471#1472#0" expanded="true" />
-                <element signature="e#1679#1680#0" expanded="true" />
-                <element signature="e#1723#1724#0" expanded="true" />
-                <marker date="1437774063109" expanded="true" signature="875:895" placeholder="SELECT * FRO..quotes..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HardCodedQuoteDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/HardCodedQuoteDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chuck-quotes.iml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chuck-quotes.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5686275">
-              <caret line="29" column="93" selection-start-line="29" selection-start-column="93" selection-end-line="29" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Quote.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/Quote.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -179,17 +132,50 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/QuotesRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#333#334#0" expanded="false" />
-                <element signature="e#374#375#0" expanded="false" />
-                <element signature="e#479#480#0" expanded="false" />
-                <element signature="e#517#518#0" expanded="false" />
-                <element signature="e#622#623#0" expanded="false" />
-                <element signature="e#657#658#0" expanded="false" />
-                <element signature="e#698#699#0" expanded="false" />
-                <element signature="e#737#738#0" expanded="false" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7222222">
+              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chuck_quotes.users" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/4469866f/4e9e79c0-8771-4863-aba7-676161a03d25/chuck_quotes..users">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySQLQuoteDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/MySQLQuoteDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1437777346466" expanded="true" signature="1173:1206" placeholder="DELETE * FRO..." />
+                <marker date="1437777346466" expanded="true" signature="1897:1933" placeholder="INSERT INTO ..." />
+                <marker date="1437777346466" expanded="true" signature="3118:3138" placeholder="SELECT * FRO..quotes..." />
               </folding>
             </state>
           </provider>
@@ -246,10 +232,12 @@
         <option value="$PROJECT_DIR$/insert_general_quotes.sql" />
         <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/UserRegistry.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/QuoteDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/QuotesRegistry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/HardCodedQuoteDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/QuoteException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/HardCodedQuoteDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/exceptions/QuoteException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/QuotesRegistry.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/MySQLQuoteDao.java" />
       </list>
     </option>
@@ -421,6 +409,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -675,7 +667,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in chuck-quotes">
+  <component name="RunManager" selected="Tomcat Server.ChuckQuotes">
     <configuration default="false" name="SCJPBrainWashing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1228,7 +1220,7 @@
       <workItem from="1436092337157" duration="24000" />
       <workItem from="1437232884673" duration="1897000" />
       <workItem from="1437496007682" duration="2174000" />
-      <workItem from="1437771505764" duration="2543000" />
+      <workItem from="1437771505764" duration="6244000" />
     </task>
     <task id="LOCAL-00001" summary="added positive test for QuotesRegistry content">
       <created>1399210550406</created>
@@ -1350,11 +1342,17 @@
       <option name="project" value="LOCAL" />
       <updated>1431641833469</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="IDE-specific files">
+      <created>1437774078864</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1437774078864</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83019000" />
+    <option name="totallyTimeSpent" value="86720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -1382,7 +1380,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4991511" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6333333" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1455,7 +1453,8 @@
     <MESSAGE value="resolved jstl maven dependency" />
     <MESSAGE value="added Twitter Bootstrap CSS styling" />
     <MESSAGE value="added database creation/population scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="added database creation/population scripts" />
+    <MESSAGE value="IDE-specific files" />
+    <option name="LAST_COMMIT_MESSAGE" value="IDE-specific files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1466,11 +1465,17 @@
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/MySQLQuoteDao.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="29" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1479,27 +1484,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/.name">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7025761">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1547,13 +1531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14845605">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1606,13 +1583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckWatchDogFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52734375">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/quote.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25619835">
@@ -1620,24 +1590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/chuck.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01902497">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4e9e79c0-8771-4863-aba7-676161a03d25/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.078431375">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1722,13 +1678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/jug/chuckquotes/QuotesRegistryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.078431375">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Java/jdk1.8.0_45/src.zip!/java/util/HashSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
@@ -1740,13 +1689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24460432">
           <caret line="123" column="39" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="73" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -1756,19 +1698,6 @@
         <state vertical-scroll-proportion="0.5108359">
           <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/4469866f/4e9e79c0-8771-4863-aba7-676161a03d25/chuck_quotes..users">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1785,17 +1714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/insert_general_quotes.sql">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20408164">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/insert_quotes.sql">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -1807,62 +1725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/UserRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15686275">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="e#321#322#0" expanded="false" />
-            <element signature="e#366#367#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/QuotesRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#333#334#0" expanded="false" />
-            <element signature="e#374#375#0" expanded="false" />
-            <element signature="e#479#480#0" expanded="false" />
-            <element signature="e#517#518#0" expanded="false" />
-            <element signature="e#622#623#0" expanded="false" />
-            <element signature="e#657#658#0" expanded="false" />
-            <element signature="e#698#699#0" expanded="false" />
-            <element signature="e#737#738#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/Quote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/QuoteDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13725491">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/dao/MySQLUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1437771890424" expanded="true" signature="809:850" placeholder="SELECT * FRO..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/exceptions/UserNotExistException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.039215688">
@@ -1871,44 +1733,185 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/exceptions/QuoteException.java">
+    <entry file="file://$PROJECT_DIR$/chuck-quotes.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.039215688">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-          <folding>
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.20069204">
+          <caret line="29" column="93" selection-start-line="29" selection-start-column="93" selection-end-line="29" selection-end-column="93" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/MySQLQuoteDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/Quote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-            <element signature="e#1679#1680#0" expanded="true" />
-            <element signature="e#1723#1724#0" expanded="true" />
-            <marker date="1437774063109" expanded="true" signature="875:895" placeholder="SELECT * FRO..quotes..." />
-          </folding>
+        <state vertical-scroll-proportion="0.13725491">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.078431375">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/chuck.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02021403">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_45/src.zip!/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4509804">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_45/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="188" column="16" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_45/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50980395">
+          <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/QuoteDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11764706">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/HardCodedQuoteDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chuck-quotes.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckWatchDogFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5686275">
-          <caret line="29" column="93" selection-start-line="29" selection-start-column="93" selection-end-line="29" selection-end-column="93" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/UserRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15686275">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/ChuckServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4117647">
+          <caret line="55" column="101" selection-start-line="55" selection-start-column="101" selection-end-line="55" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/insert_general_quotes.sql">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2244898">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/exceptions/QuoteException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05964912">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/jug/chuckquotes/QuotesRegistryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21914648">
+          <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/user/dao/MySQLUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1437771890424" expanded="true" signature="809:850" placeholder="SELECT * FRO..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4469866f/4e9e79c0-8771-4863-aba7-676161a03d25/chuck_quotes..users">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/dao/MySQLQuoteDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1437777346466" expanded="true" signature="1173:1206" placeholder="DELETE * FRO..." />
+            <marker date="1437777346466" expanded="true" signature="1897:1933" placeholder="INSERT INTO ..." />
+            <marker date="1437777346466" expanded="true" signature="3118:3138" placeholder="SELECT * FRO..quotes..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/quote/QuotesRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/jug/chuckquotes/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7222222">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
           <folding />
         </state>
       </provider>

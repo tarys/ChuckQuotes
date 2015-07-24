@@ -1,5 +1,6 @@
 package ua.jug.chuckquotes;
 
+import ua.jug.chuckquotes.exceptions.QuoteException;
 import ua.jug.chuckquotes.exceptions.UserNotExistException;
 import ua.jug.chuckquotes.jmx.LoginWatchDog;
 import ua.jug.chuckquotes.quote.QuotesRegistry;
@@ -61,7 +62,8 @@ public class LoginServlet extends HttpServlet {
                         } else {
                             getServletContext().getRequestDispatcher("/login.jsp").forward(request, response);
                         }
-                    } catch (UserNotExistException e) {
+                    } catch (UserNotExistException|QuoteException e) {
+                        e.printStackTrace();
                         getServletContext().getRequestDispatcher("/error.jsp").forward(request, response);
                     }
                     break;
