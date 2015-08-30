@@ -9,10 +9,18 @@ import java.util.List;
 
 public class QuotesRegistry {
 
+    private static QuotesRegistry instance;
     private final QuoteDao dao;
 
-    public QuotesRegistry() {
-        dao = new MySQLQuoteDao();
+    public static synchronized QuotesRegistry getInstance() {
+        if (instance == null) {
+            instance = new QuotesRegistry();
+        }
+        return instance;
+    }
+
+    private QuotesRegistry() {
+        dao = new HardCodedQuoteDao();
     }
 
     public List<Quote> getAll() throws QuoteException {

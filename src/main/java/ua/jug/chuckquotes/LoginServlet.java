@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
                             final HttpSession session = HttpServletRequest.class.cast(request).getSession();
                             QuotesRegistry quotesRegistry = (QuotesRegistry) getServletContext().getAttribute("quotesRegistry");
                             if (quotesRegistry == null) {
-                                quotesRegistry = new QuotesRegistry();
+                                quotesRegistry = QuotesRegistry.getInstance();
                                 getServletContext().setAttribute("quotesRegistry", quotesRegistry);
                             }
                             session.setAttribute("user", userRegistry.getUser(username));

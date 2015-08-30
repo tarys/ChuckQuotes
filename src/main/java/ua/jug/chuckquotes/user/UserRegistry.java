@@ -9,7 +9,7 @@ public class UserRegistry {
     private UserDao dao;
 
     public UserRegistry() {
-        this.dao = new MySQLUserDao();
+        this.dao = new HardCodedUserDao();
     }
 
     public boolean authenticate(String username, String password) throws UserNotExistException {

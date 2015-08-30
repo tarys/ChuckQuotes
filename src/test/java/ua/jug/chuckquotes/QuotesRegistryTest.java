@@ -16,7 +16,7 @@ public class QuotesRegistryTest {
 
     @BeforeClass
     public static void setUpClass() throws Exception {
-        registry = new QuotesRegistry();
+        registry = QuotesRegistry.getInstance();
 
         expectedQuotes = new String[41];
 

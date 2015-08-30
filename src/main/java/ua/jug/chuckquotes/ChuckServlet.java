@@ -24,7 +24,7 @@ public class ChuckServlet extends HttpServlet {
     private void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         QuotesRegistry quotesRegistry = (QuotesRegistry) getServletContext().getAttribute("quotesRegistry");
         if (quotesRegistry == null) {
-            quotesRegistry = new QuotesRegistry();
+            quotesRegistry = QuotesRegistry.getInstance();
             getServletContext().setAttribute("quotesRegistry", quotesRegistry);
         }
         final String command = request.getParameter("command");
@@ -83,4 +83,5 @@ public class ChuckServlet extends HttpServlet {
             }
         }
     }
+
 }
